@@ -1,0 +1,19 @@
+{
+  imports = [
+    ./cmp.nix
+    ./conform.nix
+    ./dap.nix
+    ./lsp.nix
+    ./lualine.nix
+    ./lz-n.nix
+    ./markdown-preview.nix
+    ./mini.nix
+    ./neogen.nix
+    ./neogit.nix
+    ./obsidian.nix
+    ./tagbar.nix
+    ./telescope.nix
+    ./treesitter.nix
+    ./trouble.nix
+  ];
+}
