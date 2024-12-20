@@ -1,5 +1,9 @@
-{ self, ... }: {
-  keymaps = [
+{ ... }:
+{
+  globals = {
+    mapleader = " ";
+    maplocalleader = " ";
+  };
 
-  ];
+  keymaps = [ ];
 }

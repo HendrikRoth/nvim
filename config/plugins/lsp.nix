@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ ... }:
+{
   plugins.lsp = {
     enable = true;
     servers = {
@@ -8,14 +9,17 @@
       html.enable = true;
       astro.enable = true;
       svelte.enable = true;
-      vuels.enable = true;
       pyright.enable = true;
       marksman.enable = true;
       nil_ls.enable = true;
+      nixd.enable = true;
       dockerls.enable = true;
+      docker_compose_language_service.enable = true;
       bashls.enable = true;
       yamlls.enable = true;
       gopls.enable = true;
+      sqls.enable = true;
+      jsonls.enable = true;
       lua_ls = {
         enable = true;
         settings.telemetry.enable = false;
