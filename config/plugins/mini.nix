@@ -57,7 +57,7 @@
       hipatterns = { };
       indentscope = {
         draw = {
-          delay = 50;
+          delay = 0;
         };
       };
       jump2d = { };
@@ -86,6 +86,15 @@
         n_lines = 48;
         highlight_duration = 2000;
         search_method = "cover_or_next";
+        mappings = {
+          add = "gsa";
+          delete = "gsd";
+          find = "gsf";
+          find_left = "gsF";
+          highlight = "gsh";
+          replace = "gsr";
+          update_n_lines = "gsn";
+        };
       };
       icons = { };
     };
