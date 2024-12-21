@@ -5,13 +5,13 @@
     ./dap.nix
     ./lint.nix
     ./lsp.nix
-    ./lualine.nix
     ./lz-n.nix
     ./markdown-preview.nix
     ./mini.nix
     ./neogen.nix
     ./neogit.nix
     ./obsidian.nix
+    ./project.nix
     ./tagbar.nix
     ./telescope.nix
     ./treesitter.nix
