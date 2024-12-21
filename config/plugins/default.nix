@@ -9,6 +9,7 @@
     ./markdown-preview.nix
     ./mini.nix
     ./muren.nix
+    ./navic.nix
     ./neogen.nix
     ./neogit.nix
     ./obsidian.nix

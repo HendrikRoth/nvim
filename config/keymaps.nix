@@ -13,7 +13,7 @@
             action = "";
             options = {
                 silent = true;
-                desc = "+Window";
+                desc = "Window";
             };
         }
         {
@@ -87,6 +87,16 @@
                 silent = true;
                 desc = "Other window";
             };
+        }
+
+        # Git
+        {
+          key = "<leader>g";
+          action = "<cmd>Neogit<cr>";
+          options = {
+            silent = true;
+            desc = "Git";
+          };
         }
 
         # Tagbar
