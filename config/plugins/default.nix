@@ -8,6 +8,7 @@
     ./lz-n.nix
     ./markdown-preview.nix
     ./mini.nix
+    ./muren.nix
     ./neogen.nix
     ./neogit.nix
     ./obsidian.nix
