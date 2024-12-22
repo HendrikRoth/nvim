@@ -21,7 +21,7 @@
             action = ":vsplit<cr>";
             options = {
                 silent = true;
-                desc = "Window vsplit";
+                desc = "VSplit";
             };
         }
         {
@@ -30,7 +30,7 @@
             action = ":split<cr>";
             options = {
                 silent = true;
-                desc = "Window split";
+                desc = "Split";
             };
         }
         {
@@ -39,7 +39,7 @@
             action = ":close<cr>";
             options = {
                 silent = true;
-                desc = "Window close";
+                desc = "Close";
             };
         }
         {
@@ -48,7 +48,7 @@
             action = "<c-w>h";
             options = {
                 silent = true;
-                desc = "Window left";
+                desc = "Left";
             };
         }
         {
@@ -57,7 +57,7 @@
             action = "<c-w>j";
             options = {
                 silent = true;
-                desc = "Window bottom";
+                desc = "Bottom";
             };
         }
         {
@@ -66,7 +66,7 @@
             action = "<c-w>k";
             options = {
                 silent = true;
-                desc = "Window top";
+                desc = "Top";
             };
         }
         {
@@ -75,7 +75,7 @@
             action = "<c-w>l";
             options = {
                 silent = true;
-                desc = "Window right";
+                desc = "Right";
             };
         }
         {
@@ -84,7 +84,7 @@
             action = "<C-W>p";
             options = {
                 silent = true;
-                desc = "Other window";
+                desc = "Other";
             };
         }
 
