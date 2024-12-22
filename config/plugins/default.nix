@@ -1,24 +1,5 @@
 {
-  imports = [
-    ./cmp.nix
-    ./conform.nix
-    ./dap.nix
-    ./diagram.nix
-    ./image.nix
-    ./lint.nix
-    ./lsp.nix
-    ./lz-n.nix
-    ./markdown.nix
-    ./mini.nix
-    ./muren.nix
-    ./navic.nix
-    ./neogen.nix
-    ./neogit.nix
-    ./obsidian.nix
-    ./project.nix
-    ./tagbar.nix
-    ./telescope.nix
-    ./treesitter.nix
-    ./trouble.nix
-  ];
+  imports =
+    with builtins;
+    map (fn: ./${fn}) (filter (fn: fn != "default.nix") (attrNames (readDir ./.)));
 }
