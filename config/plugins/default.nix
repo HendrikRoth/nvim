@@ -6,7 +6,7 @@
     ./lint.nix
     ./lsp.nix
     ./lz-n.nix
-    ./markdown-preview.nix
+    ./markdown.nix
     ./mini.nix
     ./muren.nix
     ./navic.nix

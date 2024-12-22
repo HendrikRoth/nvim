@@ -1,4 +1,3 @@
-{ ... }:
 {
     globals = {
         mapleader = " ";
@@ -92,7 +91,7 @@
         # Git
         {
           key = "<leader>g";
-          action = "<cmd>Neogit<cr>";
+          action = "<cmd>Neogit kind=split<cr>";
           options = {
             silent = true;
             desc = "Git";
@@ -137,6 +136,23 @@
             };
         }
         {
+          key = "<leader>fe";
+          action = ''
+            function()
+                local buffer_name = vim.api.nvim_buf_get_name(0)
+                if buffer_name == "" or string.match(buffer_name, "Starter") then
+                    require('mini.files').open(vim.loop.cwd())
+                else
+                    require('mini.files').open(vim.api.nvim_buf_get_name(0))
+                end
+            end
+          '';
+          options = {
+              silent = true;
+              desc = "Manually";
+          };
+        }
+        {
             key = "<leader>fg";
             action = "<cmd>Telescope live_grep<cr>";
             options = {
@@ -150,6 +166,14 @@
             options = {
                 silent = true;
                 desc = "Git files";
+            };
+        }
+        {
+            key = "<leader>fp";
+            action = "<cmd>Telescope projects<cr>";
+            options = {
+                silent = true;
+                desc = "Projects";
             };
         }
         {
@@ -199,6 +223,82 @@
                 silent = true;
                 desc = "Other";
             };
+        }
+
+        # Neogen
+        {
+          mode = "n";
+          key = "<leader>g";
+          action = "";
+          options = {
+            silent = true;
+            desc = "Generate";
+          };
+        }
+        {
+          mode = [
+            "n"
+            "x"
+          ];
+          key = "<leader>gg";
+          action.__raw = "function() require('neogen').generate() end";
+          options = {
+            silent = true;
+            noremap = true;
+            desc = "Generate";
+          };
+        }
+        {
+          mode = [
+            "n"
+            "x"
+          ];
+          key = "<leader>gf";
+          action = ":Neogen func<cr>";
+          options = {
+            silent = true;
+            noremap = true;
+            desc = "Function";
+          };
+        }
+        {
+          mode = [
+            "n"
+            "x"
+          ];
+          key = "<leader>gc";
+          action = ":Neogen class<cr>";
+          options = {
+            silent = true;
+            noremap = true;
+            desc = "Class";
+          };
+        }
+        {
+          mode = [
+            "n"
+            "x"
+          ];
+          key = "<leader>gt";
+          action = ":Neogen type<cr>";
+          options = {
+            silent = true;
+            noremap = true;
+            desc = "Type";
+          };
+        }
+        {
+          mode = [
+            "n"
+            "x"
+          ];
+          key = "<leader>gm";
+          action = ":Neogen module<cr>";
+          options = {
+            silent = true;
+            noremap = true;
+            desc = "Module";
+          };
         }
     ];
 }
