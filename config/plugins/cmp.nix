@@ -2,6 +2,7 @@
 {
   plugins.blink-cmp = {
     enable = true;
+
     settings = {
       accept.auto_brackets.enabled = true;
       window.documentation.auto_show = true;
@@ -23,35 +24,8 @@
           "path"
           "snippets"
           "spell"
+          "omni"
         ];
-        providers = {
-          calc = {
-            name = "calc";
-            module = "blink.compat.source";
-            score_offset = 2;
-          };
-          emoji = {
-            name = "emoji";
-            module = "blink.compat.source";
-            score_offset = 1;
-          };
-          git = {
-            name = "git";
-            module = "blink.compat.source";
-            score_offset = 0;
-          };
-          lsp = {
-            score_offset = 4;
-            capabilities = ''
-              capabilities = require('blink.cmp').get_lsp_capabilities(capabilities)
-            '';
-          };
-          spell = {
-            name = "spell";
-            module = "blink.compat.source";
-            score_offset = -1;
-          };
-        };
       };
 
       keymap = {

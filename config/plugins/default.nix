@@ -3,6 +3,8 @@
     ./cmp.nix
     ./conform.nix
     ./dap.nix
+    ./diagram.nix
+    ./image.nix
     ./lint.nix
     ./lsp.nix
     ./lz-n.nix

@@ -5,6 +5,10 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixvim.url = "github:nix-community/nixvim";
     flake-parts.url = "github:hercules-ci/flake-parts";
+    "diagram.nvim" = {
+      url = "github:3rd/diagram.nvim/feature/toggle";
+      flake = false;
+    };
   };
 
   outputs = {
