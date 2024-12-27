@@ -300,5 +300,160 @@
             desc = "Module";
           };
         }
+
+        # Obsidian
+        {
+          mode = "n";
+          key = "<leader>o";
+          action = "";
+          options = {
+            silent = true;
+            desc = "Obsidian";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>oo";
+          action = ":ObsidianOpen<cr>";
+          options = {
+            silent = true;
+            desc = "Open";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>on";
+          action = ":ObsidianNew<cr>";
+          options = {
+            silent = true;
+            desc = "New";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>os";
+          action = ":ObsidianSearch<cr>";
+          options = {
+            silent = true;
+            desc = "Search";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>of";
+          action = ":ObsidianfollowLink vsplit<cr>";
+          options = {
+            silent = true;
+            desc = "Follow link";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>ob";
+          action = ":ObsidianBacklinks<cr>";
+          options = {
+            silent = true;
+            desc = "Backlinks";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>ot";
+          action = ":ObsidianTags<cr>";
+          options = {
+            silent = true;
+            desc = "Tags";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>oT";
+          action = ":ObsidianToday<cr>";
+          options = {
+            silent = true;
+            desc = "Today";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>oY";
+          action = ":ObsidianYesteraday<cr>";
+          options = {
+            silent = true;
+            desc = "Yesterday";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>od";
+          action = ":ObsidianDailies -10 1<cr>";
+          options = {
+            silent = true;
+            desc = "Dailies";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>ol";
+          action = ":ObsidianLinks<cr>";
+          options = {
+            silent = true;
+            desc = "Links";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>oL";
+          action = ":ObsidianLinkNew<cr>";
+          options = {
+            silent = true;
+            desc = "New link";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>oL";
+          action = ":ObsidianLinkNew<cr>";
+          options = {
+            silent = true;
+            desc = "New link";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>oi";
+          action = ":ObsidianPasteImg<cr>";
+          options = {
+            silent = true;
+            desc = "Paste image";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>or";
+          action = ":ObsidianRename<cr>";
+          options = {
+            silent = true;
+            desc = "Rename";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>or";
+          action = ":ObsidianToggleCheckbox<cr>";
+          options = {
+            silent = true;
+            desc = "Toggle checkbox";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>oT";
+          action = ":ObsidianTOC<cr>";
+          options = {
+            silent = true;
+            desc = "Toc";
+          };
+        }
     ];
 }
