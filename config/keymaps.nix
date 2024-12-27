@@ -90,7 +90,7 @@
 
         # Git
         {
-          key = "<leader>g";
+          key = "<leader>.";
           action = "<cmd>Neogit kind=split<cr>";
           options = {
             silent = true;

@@ -56,7 +56,7 @@
         "<C-y>" = [
           "select_and_accept"
         ];
-        "<Enter>" = [
+        "<C-Enter>" = [
           "select_and_accept"
         ];
         "<Down>" = [
