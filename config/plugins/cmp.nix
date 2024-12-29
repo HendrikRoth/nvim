@@ -55,9 +55,11 @@
         ];
         "<C-y>" = [
           "select_and_accept"
+          "fallback"
         ];
-        "<C-Enter>" = [
+        "<Enter>" = [
           "select_and_accept"
+          "fallback"
         ];
         "<Down>" = [
           "select_next"
