@@ -455,5 +455,16 @@
             desc = "Toc";
           };
         }
+
+        # File Browser
+        {
+          mode = "n";
+          key = "-";
+          action = ":lua MiniFiles.open()<cr>";
+          options = {
+            silent = true;
+            desc = "File Browser";
+          };
+        }
     ];
 }
