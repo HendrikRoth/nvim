@@ -1,5 +1,9 @@
-{ ... }:
+{ pkgs, ... }:
 {
+  extraPlugins = [ pkgs.vimPlugins.blink-compat ];
+
+  plugins.blink-compat.enable = true;
+
   plugins.blink-cmp = {
     enable = true;
 
@@ -17,17 +21,28 @@
 
       sources = {
         default = [
-          "buffer"
-          "calc"
-          "emoji"
-          "git"
           "lsp"
-          "luasnip"
           "path"
           "snippets"
-          "spell"
+          "buffer"
+          "git"
+          "calc"
           "omni"
         ];
+        providers = {
+          git = {
+            name = "git";
+            module = "blink.compat.source";
+          };
+          calc = {
+            name = "calc";
+            module = "blink.compat.source";
+          };
+          omni = {
+            name = "omni";
+            module = "blink.compat.source";
+          };
+        };
       };
 
       keymap = {
@@ -82,4 +97,12 @@
       };
     };
   };
+
+  plugins.lsp.capabilities = ''
+    capabilities = require('blink.cmp').get_lsp_capabilities(capabilities)
+  '';
+
+  plugins.cmp-omni.enable = true;
+  plugins.cmp-git.enable = true;
+  plugins.cmp-calc.enable = true;
 }
