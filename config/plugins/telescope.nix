@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ ... }:
+{
   plugins.telescope = {
     enable = true;
 
@@ -7,11 +8,16 @@
     extensions = {
       fzy-native.enable = true;
       ui-select.enable = true;
+      file-browser.enable = true;
+      project.enable = true;
+      undo.enable = true;
 
       frecency = {
         enable = true;
 
-        settings = { db_safe_mode = false; };
+        settings = {
+          db_safe_mode = false;
+        };
       };
     };
   };

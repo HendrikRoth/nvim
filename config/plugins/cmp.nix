@@ -4,15 +4,17 @@
     enable = true;
 
     settings = {
-      accept.auto_brackets.enabled = true;
-      window.documentation.auto_show = true;
-      highlight.use_nvim_cmp_as_default = true;
-      trigger.signature_help.enabled = true;
-      ghost_text.enabled = true;
+      appearance = {
+        use_nvim_cmp_as_default = true;
+      };
+
+      completion = {
+        documentation.auto_show = true;
+        ghost_text.enabled = true;
+      };
+
       signature.enabled = true;
-      lsp.capabilities = ''
-        capabilities = require('blink.cmp').get_lsp_capabilities(capabilities)
-      '';
+
       sources = {
         default = [
           "buffer"
