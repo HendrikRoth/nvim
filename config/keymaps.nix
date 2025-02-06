@@ -217,6 +217,30 @@
             };
         }
         {
+            key = "<leader>fu";
+            action = "<cmd>Telescope undo<cr>";
+            options = {
+                silent = true;
+                desc = "Undo";
+            };
+        }
+        {
+            key = "<leader>fo";
+            action = "<cmd>Telescope oldfiles<cr>";
+            options = {
+                silent = true;
+                desc = "Old files";
+            };
+        }
+        {
+            key = "<leader>ft";
+            action = "<cmd>Telescope todo-comments<cr>";
+            options = {
+                silent = true;
+                desc = "Todos";
+            };
+        }
+        {
             key = "<leader>f?";
             action = "<cmd>Telescope builtin<cr>";
             options = {
