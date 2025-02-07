@@ -63,7 +63,7 @@
       jump2d = { };
       move = {
         mappings = {
-          # Normal mode
+          # Normalmode
           down = "<c-j>";
           up = "<c-k>";
           left = "<c-h>";
@@ -81,20 +81,30 @@
       statusline = {
         set_vim_settings = false;
       };
+      splitjoin = {
+        mappings = {
+          toggle = "gs";
+          split = "";
+          join = "";
+        };
+      };
       surround = {
         n_lines = 48;
         highlight_duration = 2000;
         search_method = "cover_or_next";
         mappings = {
-          add = "gsa";
-          delete = "gsd";
-          find = "gsf";
-          find_left = "gsF";
-          highlight = "gsh";
-          replace = "gsr";
-          update_n_lines = "gsn";
+          add = "sa";
+          delete = "sd";
+          find = "sf";
+          find_left = "sF";
+          highlight = "sh";
+          replace = "sr";
+          update_n_lines = "sn";
+          suffix_last = "l";
+          suffix_next = "n";
         };
       };
+      trailspace = { };
       icons = { };
     };
   };
