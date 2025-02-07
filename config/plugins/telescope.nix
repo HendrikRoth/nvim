@@ -8,7 +8,7 @@
     lazyLoad.settings.cmd = "Telescope";
 
     extensions = {
-      fzy-native.enable = true;
+      fzf-native.enable = true;
       ui-select.enable = true;
       file-browser.enable = true;
       project.enable = true;
