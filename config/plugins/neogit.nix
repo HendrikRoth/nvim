@@ -1,6 +1,7 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   plugins.neogit = {
     enable = true;
-    lazyLoad.settings.cmd = "Neogit";
+    lazyLoad.settings.event = "DeferredUIEnter";
   };
 }

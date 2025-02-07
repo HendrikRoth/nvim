@@ -4,8 +4,37 @@
 
   plugins.telescope = {
     enable = true;
+    lazyLoad.settings.event = "DeferredUIEnter";
 
-    lazyLoad.settings.cmd = "Telescope";
+    settings = {
+      defaults = {
+        file_ignore_patterns = [
+          "^.git/"
+          "^.mypy_cache/"
+          "^__pycache__/"
+          "^output/"
+          "^data/"
+          "%.ipynb"
+        ];
+        selection_caret = "";
+        entry_prefix = "";
+        mappings = {
+          i = {
+            "<C-j>" = {
+              __raw = ''require('telescope.actions').move_selection_next'';
+            };
+            "<C-k>" = {
+              __raw = ''require('telescope.actions').move_selection_previous'';
+            };
+          };
+        };
+      };
+      pickers = {
+        colorscheme = {
+          enable_preview = true;
+        };
+      };
+    };
 
     extensions = {
       fzf-native.enable = true;
