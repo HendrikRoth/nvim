@@ -37,6 +37,15 @@
           extraSpecialArgs = {};
         };
         nvim = nixvim'.makeNixvimWithModule nixvimModule;
+        shell = pkgs.mkShell {
+          name = "nvim-devshell";
+          buildInputs = with pkgs; [
+            lua-language-server
+            nil
+            nvim
+            ripgrep
+          ];
+        };
       in {
         checks = {
           default = nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;
@@ -44,6 +53,10 @@
 
         packages = {
           default = nvim;
+        };
+
+        devShells = {
+          default = shell;
         };
       };
     };
