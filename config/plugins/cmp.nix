@@ -74,7 +74,11 @@
           "select_and_accept"
           "fallback"
         ];
-        "<Enter>" = [
+        "<S-Enter>" = [
+          "select_and_accept"
+          "fallback"
+        ];
+        "<C-Enter>" = [
           "select_and_accept"
           "fallback"
         ];
