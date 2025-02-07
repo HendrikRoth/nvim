@@ -6,17 +6,20 @@
       exclude = {
         buftypes = [
           "terminal"
+          "nofile"
           "quickfix"
+          "prompt"
         ];
         filetypes = [
-          ""
-          "checkhealth"
-          "help"
           "lspinfo"
           "packer"
+          "checkhealth"
+          "help"
+          "man"
+          "gitcommit"
           "TelescopePrompt"
           "TelescopeResults"
-          "yaml"
+          "''"
         ];
       };
       indent = {

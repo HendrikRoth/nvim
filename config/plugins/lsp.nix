@@ -25,7 +25,10 @@
       svelte.enable = true;
       pyright.enable = true;
       marksman.enable = true;
-      nil_ls.enable = true;
+      nil_ls = {
+        enable = true;
+        settings.nix.flake.autoArchive = true;
+      };
       nixd.enable = true;
       dockerls.enable = true;
       docker_compose_language_service.enable = true;

@@ -136,23 +136,6 @@
             };
         }
         {
-          key = "<leader>fe";
-          action = ''
-            function()
-                local buffer_name = vim.api.nvim_buf_get_name(0)
-                if buffer_name == "" or string.match(buffer_name, "Starter") then
-                    require('mini.files').open(vim.loop.cwd())
-                else
-                    require('mini.files').open(vim.api.nvim_buf_get_name(0))
-                end
-            end
-          '';
-          options = {
-              silent = true;
-              desc = "Manually";
-          };
-        }
-        {
             key = "<leader>fg";
             action = "<cmd>Telescope live_grep<cr>";
             options = {
@@ -484,7 +467,13 @@
         {
           mode = "n";
           key = "-";
-          action = ":lua MiniFiles.open()<cr>";
+          # action = ":lua MiniFiles.open()<cr>";
+          action.__raw = ''
+            function()
+              require('mini.files').open(vim.api.nvim_buf_get_name(0), false)
+              require('mini.files').reveal_cwd()
+            end
+          '';
           options = {
             silent = true;
             desc = "File Browser";

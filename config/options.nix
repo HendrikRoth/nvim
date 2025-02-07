@@ -96,6 +96,9 @@
     encoding = "utf-8";
     fileencoding = "utf-8";
 
+    # Clipboard
+    clipboard = "unnamedplus";
+
     # Fallback to lsp if no formatters are available
     formatexpr = "v:lua.require'conform'.formatexpr()";
   };
