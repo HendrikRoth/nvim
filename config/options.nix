@@ -1,6 +1,16 @@
 { ... }:
 {
-  colorschemes.catppuccin.enable = true;
+  colorschemes.catppuccin = {
+    enable = true;
+    settings = {
+      transparent_background = true;
+      integrations = {
+        treesitter = true;
+        indent_blankline.enabled = true;
+        mini.enabled = true;
+      };
+    };
+  };
 
   performance = {
     byteCompileLua = {

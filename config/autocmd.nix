@@ -9,6 +9,23 @@
 
   autoCmd = [
     {
+      event = [
+        "BufEnter"
+        "BufWinEnter"
+      ];
+      pattern = [
+        "*.md"
+        "*.mdx"
+      ];
+      command = "MarkdownPreviewToggle";
+    }
+    {
+      event = [ "VimEnter" ];
+      callback = {
+        __raw = "function() if vim.fn.argv(0) == '' then require('telescope.builtin').find_files() end end";
+      };
+    }
+    {
       desc = "Don't auto comment new line";
       event = [
         "BufEnter"
@@ -37,10 +54,10 @@
         "notify"
       ];
       callback.__raw = ''
-          function()
-            vim.b.miniindentscope_disable = true
-          end
-        '';
+        function()
+          vim.b.miniindentscope_disable = true
+        end
+      '';
     }
     {
       desc = "Restore cursor position";
@@ -58,7 +75,7 @@
             vim.cmd "normal! g`\""
             end
         end
-        '';
+      '';
     }
     {
       desc = "Highlight text on yank";
@@ -66,10 +83,10 @@
       event = [ "TextYankPost" ];
       pattern = "*";
       callback.__raw = ''
-            function()
-            vim.highlight.on_yank()
-            end
-        '';
+        function()
+        vim.highlight.on_yank()
+        end
+      '';
     }
     {
       desc = "Automatically close terminal Buffers when their Process is done";
