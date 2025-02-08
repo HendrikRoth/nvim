@@ -98,16 +98,6 @@
           };
         }
 
-        # Tagbar
-        {
-            key = "<leader>t";
-            action = "<cmd>Tagbar<cr>";
-            options = {
-                silent = true;
-                desc = "Tagbar";
-            };
-        }
-
         # Muren
         {
             key = "<leader>r";
