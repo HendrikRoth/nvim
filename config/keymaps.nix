@@ -5,6 +5,17 @@
     };
 
     keymaps = [
+        # AI
+        {
+            mode = "n";
+            key = "<leader>a";
+            action = "";
+            options = {
+                silent = true;
+                desc = "AI";
+            };
+        }
+
         # Window
         {
             mode = "n";
