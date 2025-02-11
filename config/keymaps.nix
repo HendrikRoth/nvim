@@ -16,6 +16,17 @@
             };
         }
 
+        # Colorpicker
+        {
+            mode = "n";
+            key = "<leader>c";
+            action = ":Huefy<cr>";
+            options = {
+                silent = true;
+                desc = "Colorpicker";
+            };
+        }
+
         # Window
         {
             mode = "n";
