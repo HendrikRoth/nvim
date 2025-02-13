@@ -3,6 +3,7 @@
   extraPackages = with pkgs; [
     nix
     ripgrep
+    vale
   ];
 
   imports =
