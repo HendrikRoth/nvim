@@ -14,6 +14,11 @@
           stack_upwards = false;
         };
       };
+      progress = {
+        display = {
+          done_ttl = 1;
+        };
+      };
     };
   };
 }
