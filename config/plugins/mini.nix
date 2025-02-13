@@ -76,7 +76,7 @@
           line_right = "<c-l>";
         };
       };
-      notify = { };
+      # notify = { };
       pairs = { };
       statusline = {
         set_vim_settings = false;
