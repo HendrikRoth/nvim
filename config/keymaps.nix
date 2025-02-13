@@ -491,5 +491,16 @@
             desc = "File Browser";
           };
         }
+
+        # Aerial (Tags)
+        {
+          mode = "n";
+          key = "<leader>t";
+          action = ":AerialToggle<cr>";
+          options = {
+            silent = true;
+            desc = "Tags";
+          };
+        }
     ];
 }
