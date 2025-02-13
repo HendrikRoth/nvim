@@ -112,7 +112,7 @@
 
         # Git
         {
-          key = "<leader>.";
+          key = "<leader>g";
           action = "<cmd>Neogit kind=split<cr>";
           options = {
             silent = true;
@@ -247,7 +247,7 @@
         # Neogen
         {
           mode = "n";
-          key = "<leader>g";
+          key = "<leader>.";
           action = "";
           options = {
             silent = true;
@@ -259,7 +259,7 @@
             "n"
             "x"
           ];
-          key = "<leader>gg";
+          key = "<leader>.g";
           action.__raw = "function() require('neogen').generate() end";
           options = {
             silent = true;
@@ -272,7 +272,7 @@
             "n"
             "x"
           ];
-          key = "<leader>gf";
+          key = "<leader>.f";
           action = ":Neogen func<cr>";
           options = {
             silent = true;
@@ -285,7 +285,7 @@
             "n"
             "x"
           ];
-          key = "<leader>gc";
+          key = "<leader>.c";
           action = ":Neogen class<cr>";
           options = {
             silent = true;
@@ -298,7 +298,7 @@
             "n"
             "x"
           ];
-          key = "<leader>gt";
+          key = "<leader>.t";
           action = ":Neogen type<cr>";
           options = {
             silent = true;
@@ -311,7 +311,7 @@
             "n"
             "x"
           ];
-          key = "<leader>gm";
+          key = "<leader>.m";
           action = ":Neogen module<cr>";
           options = {
             silent = true;
