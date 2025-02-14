@@ -5,7 +5,13 @@
     lazyLoad.settings.event = "DeferredUIEnter";
 
     settings = {
-      highlighter.auto_enable = true;
+      highlighter = {
+        lsp = false;
+        auto_enable = true;
+        excludes = [ "markdown" ];
+        highlight_mode = "virtual";
+      };
+      lsp = false;
     };
   };
 }
