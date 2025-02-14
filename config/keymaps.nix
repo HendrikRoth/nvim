@@ -20,7 +20,7 @@
         {
             mode = "n";
             key = "<leader>c";
-            action = ":Huefy<cr>";
+            action = ":CccPick<cr>";
             options = {
                 silent = true;
                 desc = "Colorpicker";
