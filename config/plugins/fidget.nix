@@ -8,7 +8,7 @@
       notification = {
         window = {
           align = "top";
-          winblend = 10;
+          winblend = 60;
         };
         view = {
           stack_upwards = false;

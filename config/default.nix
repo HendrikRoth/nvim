@@ -1,6 +1,8 @@
 { pkgs, ... }:
 {
   extraPackages = with pkgs; [
+    chafa
+    imagemagick
     nix
     ripgrep
     vale

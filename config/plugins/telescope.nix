@@ -42,12 +42,28 @@
       file-browser.enable = true;
       project.enable = true;
       undo.enable = true;
-
       frecency = {
         enable = true;
 
         settings = {
           db_safe_mode = false;
+        };
+      };
+      media-files = {
+        enable = true;
+        dependencies = {
+          chafa.enable = true;
+          imageMagick.enable = true;
+        };
+        settings = {
+          filetypes = [
+            "png"
+            "jpg"
+            "jpeg"
+            "webp"
+            "gif"
+          ];
+          find_cmd = "rg";
         };
       };
     };
