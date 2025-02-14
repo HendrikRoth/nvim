@@ -102,4 +102,9 @@
     # Fallback to lsp if no formatters are available
     formatexpr = "v:lua.require'conform'.formatexpr()";
   };
+
+  globals = {
+    loaded_ruby_provider = 0;
+    loaded_perl_provider = 0;
+  };
 }
