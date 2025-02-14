@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ ... }: {
   plugins.obsidian = {
     enable = true;
     lazyLoad.settings.ft = "markdown";
