@@ -94,11 +94,11 @@
           "fallback"
         ];
         "<S-Tab>" = [
-          "snippet_backward"
+          "select_prev"
           "fallback"
         ];
         "<Tab>" = [
-          "snippet_forward"
+          "select_next"
           "fallback"
         ];
         "<Up>" = [
