@@ -506,7 +506,7 @@
         # Testing
         {
           mode = "n";
-          key = "<leader>x";
+          key = "<leader>v";
           action = "";
           options = {
             silent = true;
@@ -515,7 +515,7 @@
         }
         {
           mode = "n";
-          key = "<leader>xa";
+          key = "<leader>va";
           action = ":Neotest attach<cr>";
           options = {
             silent = true;
@@ -524,7 +524,7 @@
         }
         {
           mode = "n";
-          key = "<leader>xd";
+          key = "<leader>vd";
           action.__raw = "function() require('neotest').run.run({strategy = 'dap'}) end";
           options = {
             silent = true;
@@ -533,7 +533,7 @@
         }
         {
           mode = "n";
-          key = "<leader>xo";
+          key = "<leader>vo";
           action = ":Neotest output<cr>";
           options = {
             silent = true;
@@ -542,7 +542,7 @@
         }
         {
           mode = "n";
-          key = "<leader>xp";
+          key = "<leader>vp";
           action = ":Neotest output-panel<cr>";
           options = {
             silent = true;
@@ -551,7 +551,7 @@
         }
         {
           mode = "n";
-          key = "<leader>xr";
+          key = "<leader>vr";
           action = ":Neotest run<cr>";
           options = {
             silent = true;
@@ -560,7 +560,7 @@
         }
         {
           mode = "n";
-          key = "<leader>xs";
+          key = "<leader>vs";
           action = ":Neotest stop<cr>";
           options = {
             silent = true;
@@ -569,11 +569,22 @@
         }
         {
           mode = "n";
-          key = "<leader>xt";
+          key = "<leader>vt";
           action = ":Neotest summary<cr>";
           options = {
             silent = true;
             desc = "Toggle summary";
+          };
+        }
+
+        # Code action
+        {
+          mode = "n";
+          key = "<leader>x";
+          action.__raw = "function() require('fastaction').code_action() end";
+          options = {
+            silent = true;
+            desc = "Code action";
           };
         }
     ];
