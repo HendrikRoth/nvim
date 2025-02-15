@@ -502,5 +502,79 @@
             desc = "Tags";
           };
         }
+
+        # Testing
+        {
+          mode = "n";
+          key = "<leader>x";
+          action = "";
+          options = {
+            silent = true;
+            desc = "Testing";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>xa";
+          action = ":Neotest attach<cr>";
+          options = {
+            silent = true;
+            desc = "Attach";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>xd";
+          action.__raw = "function() require('neotest').run.run({strategy = 'dap'}) end";
+          options = {
+            silent = true;
+            desc = "Debug";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>xo";
+          action = ":Neotest output<cr>";
+          options = {
+            silent = true;
+            desc = "Output";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>xp";
+          action = ":Neotest output-panel<cr>";
+          options = {
+            silent = true;
+            desc = "Toggle panel";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>xr";
+          action = ":Neotest run<cr>";
+          options = {
+            silent = true;
+            desc = "Run";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>xs";
+          action = ":Neotest stop<cr>";
+          options = {
+            silent = true;
+            desc = "Stop";
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>xt";
+          action = ":Neotest summary<cr>";
+          options = {
+            silent = true;
+            desc = "Toggle summary";
+          };
+        }
     ];
 }

@@ -103,5 +103,11 @@
         end
       '';
     }
+    {
+      desc = "Open help in verical split";
+      event = "FileType";
+      pattern = "help";
+      command = "wincmd L";
+    }
   ];
 }
