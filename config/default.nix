@@ -4,8 +4,10 @@
     chafa
     imagemagick
     nix
+    nixd
     ripgrep
     vale
+    yamllint
   ];
 
   imports =
