@@ -77,6 +77,7 @@
         installRustc = true;
         installCargo = true;
       };
+      terraformls.enable = true;
     };
   };
 }
