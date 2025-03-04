@@ -33,6 +33,7 @@
           "isort"
           "black"
         ];
+        terraform = [ "tofu_fmt" "terraform_fmt" ];
         typescript = [
           "biome"
           "prettier"
@@ -41,7 +42,7 @@
           "biome"
           "prettier"
         ];
-        yaml = [ "biome" ];
+        yaml = [ "biome" "yamlfmt" ];
         "_" = [ "trim_whitespace" ];
       };
       formatters = {
