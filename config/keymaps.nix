@@ -587,5 +587,23 @@
             desc = "Code action";
           };
         }
+
+        # Move lines
+        {
+          mode = "n";
+          key = "<S-j>";
+          action = ":m+1<cr>";
+          options = {
+            silent = true;
+          };
+        }
+        {
+          mode = "n";
+          key = "<S-k>";
+          action = ":m-2<cr>";
+          options = {
+            silent = true;
+          };
+        }
     ];
 }
