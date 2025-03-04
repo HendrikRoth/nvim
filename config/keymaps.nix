@@ -605,5 +605,21 @@
             silent = true;
           };
         }
+        {
+          mode = "v";
+          key = ">";
+          action = ">gv";
+          options = {
+            silent = true;
+          };
+        }
+        {
+          mode = "v";
+          key = "<";
+          action = "<gv";
+          options = {
+            silent = true;
+          };
+        }
     ];
 }
