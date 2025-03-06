@@ -591,7 +591,7 @@
         # Move lines
         {
           mode = "n";
-          key = "<S-j>";
+          key = "<C-j>";
           action = ":m+1<cr>";
           options = {
             silent = true;
@@ -599,7 +599,7 @@
         }
         {
           mode = "n";
-          key = "<S-k>";
+          key = "<C-k>";
           action = ":m-2<cr>";
           options = {
             silent = true;
