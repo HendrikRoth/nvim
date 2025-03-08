@@ -72,6 +72,7 @@
         enable = true;
         settings.telemetry.enable = false;
       };
+      openscad_lsp.enable = true;
       rust_analyzer = {
         enable = true;
         installRustc = true;
