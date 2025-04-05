@@ -120,10 +120,10 @@
           };
         }
 
-        # Muren
+        # Grug-Far
         {
             key = "<leader>r";
-            action = "<cmd>MurenToggle<cr>";
+            action = ":lua require('grug-far').open({ prefills = { search = vim.fn.expand('<cword>') } })<cr>";
             options = {
                 silent = true;
                 desc = "Replace";
@@ -479,7 +479,6 @@
         {
           mode = "n";
           key = "-";
-          # action = ":lua MiniFiles.open()<cr>";
           action.__raw = ''
             function()
               require('mini.files').open(vim.api.nvim_buf_get_name(0), false)

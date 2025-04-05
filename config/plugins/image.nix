@@ -2,6 +2,8 @@
 {
   plugins.image = {
     enable = true;
-    integrations.markdown.enabled = true;
+    settings = {
+      integrations.markdown.enabled = true;
+    };
   };
 }
