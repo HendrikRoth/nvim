@@ -45,12 +45,18 @@
     };
   };
 
+  plugins.helm = {
+    enable = true;
+  };
+
   plugins.lsp = {
     enable = true;
+    inlayHints = true;
     servers = {
       ts_ls.enable = true;
       cssls.enable = true;
       tailwindcss.enable = true;
+      helm_ls.enable = true;
       html.enable = true;
       astro.enable = true;
       svelte.enable = true;
