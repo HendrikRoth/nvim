@@ -1,11 +1,14 @@
-{ pkgs, ... }:
+{ ... }:
 {
-  extraPlugins = [ pkgs.vimPlugins.blink-compat ];
-
   plugins.blink-compat.enable = true;
+  plugins.blink-cmp-git.enable = true;
+  plugins.blink-emoji.enable = true;
+  plugins.blink-ripgrep.enable = true;
+  plugins.blink-cmp-dictionary.enable = true;
 
   plugins.blink-cmp = {
     enable = true;
+    setupLspCapabilities = true;
 
     settings = {
       appearance = {
@@ -28,26 +31,35 @@
 
       sources = {
         default = [
+          "buffer"
           "lsp"
           "path"
           "snippets"
-          "buffer"
+          "dictionary"
+          "emoji"
           "git"
-          "calc"
-          "omni"
+          "spell"
+          "ripgrep"
         ];
         providers = {
           git = {
             name = "git";
-            module = "blink.compat.source";
+            module = "blink-cmp-git";
           };
-          calc = {
-            name = "calc";
-            module = "blink.compat.source";
+          ripgrep = {
+            name = "Ripgrep";
+            module = "blink-ripgrep";
+            score_offset = 1;
           };
-          omni = {
-            name = "omni";
-            module = "blink.compat.source";
+          dictionary = {
+            name = "dict";
+            module = "blink-cmp-dictionary";
+            min_keyword_length = 3;
+          };
+          emoji = {
+            name = "emoji";
+            module = "blink-emoji";
+            score_offset = 1;
           };
         };
       };
@@ -112,8 +124,4 @@
   plugins.lsp.capabilities = ''
     capabilities = require('blink.cmp').get_lsp_capabilities(capabilities)
   '';
-
-  plugins.cmp-omni.enable = true;
-  plugins.cmp-git.enable = true;
-  plugins.cmp-calc.enable = true;
 }

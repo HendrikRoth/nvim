@@ -2,6 +2,7 @@
 {
   plugins.avante = {
     enable = true;
+    lazyLoad.settings.event = [ "BufEnter" ];
 
     settings = {
       provider = "openrouter";
