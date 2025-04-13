@@ -2,7 +2,12 @@
 {
   plugins.conform-nvim = {
     enable = true;
-    lazyLoad.settings.event = "DeferredUIEnter";
+    lazyLoad.settings = {
+      cmd = [
+        "ConformInfo"
+      ];
+      event = [ "BufWrite" ];
+    };
     settings = {
       notify_on_error = false;
       notify_no_formatters = false;
