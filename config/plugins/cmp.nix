@@ -38,7 +38,6 @@
           "dictionary"
           "emoji"
           "git"
-          "spell"
           "ripgrep"
         ];
         providers = {

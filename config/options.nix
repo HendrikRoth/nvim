@@ -22,7 +22,7 @@
     };
   };
 
-  diagnostics.virtual_lines.only_current_line = true;
+  # diagnostics.virtual_lines.only_current_line = true;
 
   opts = {
     # highlight on search

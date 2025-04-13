@@ -112,4 +112,9 @@
       };
     };
   };
+
+  plugins.lsp-signature = {
+    enable = true;
+    lazyLoad.settings.event = "DeferredUIEnter";
+  };
 }
