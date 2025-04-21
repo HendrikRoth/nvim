@@ -141,7 +141,7 @@
         }
         {
             key = "<leader>ff";
-            action = "<cmd>Telescope find_files<cr>";
+            action = ":lua Telescope find_files<cr>";
             options = {
                 silent = true;
                 desc = "Files";
