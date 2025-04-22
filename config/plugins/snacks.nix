@@ -4,25 +4,24 @@
     enable = true;
 
     settings = {
-      dashboard = {
-        enabled = false;
-      };
-      bigfile = {
-        enabled = true;
-      };
+      dashboard.enabled = false;
+      bigfile.enabled = true;
+      quickfile.enabled = true;
+      explorer.replace_netrw = true;
+      input.enabled = true;
       notifier = {
         enabled = true;
-        timeout = 3000;
-        style = "compact";
-      };
-      quickfile = {
-        enabled = false;
-      };
-      explorer = {
-        replace_netrw = true;
+        timeout = 1000;
+        style = "minimal";
+        top_down = false;
       };
       statuscolumn = {
-        enabled = false;
+        enabled = true;
+        left = [ "mark" "sign" ];
+        right = [ "fold" "git" ];
+        git = {
+          patterns = [ "GitSign" "MiniDiffSign" ];
+        };
       };
       words = {
         debounce = 0;
@@ -38,12 +37,12 @@
       };
       picker = {
         enabled = true;
+        layout.presset = "telescope";
       };
       image = {
         enabled = true;
-      };
-      input = {
-        enabled = true;
+        doc.inline = false;
+        border = "none";
       };
     };
   };
