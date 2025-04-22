@@ -2,18 +2,24 @@
 {
   plugins.snacks = {
     enable = true;
-    lazyLoad.settings.event = "DeferredUIEnter";
 
     settings = {
+      dashboard = {
+        enabled = false;
+      };
       bigfile = {
         enabled = true;
       };
       notifier = {
         enabled = true;
         timeout = 3000;
+        style = "compact";
       };
       quickfile = {
         enabled = false;
+      };
+      explorer = {
+        replace_netrw = true;
       };
       statuscolumn = {
         enabled = false;
@@ -30,7 +36,13 @@
         only_scope = true;
         only_current = true;
       };
+      picker = {
+        enabled = true;
+      };
       image = {
+        enabled = true;
+      };
+      input = {
         enabled = true;
       };
     };

@@ -130,7 +130,15 @@
             };
         }
 
-        # Telescope
+        # Snacks
+        {
+            key = "<leader><CR>";
+            action = ":lua Snacks.terminal()<cr>";
+            options = {
+                silent = true;
+                desc = "Terminal";
+            };
+        }
         {
             key = "<leader>f";
             action = "";
@@ -141,7 +149,7 @@
         }
         {
             key = "<leader>ff";
-            action = ":lua Telescope find_files<cr>";
+            action = ":lua Snacks.picker.files()<cr>";
             options = {
                 silent = true;
                 desc = "Files";
@@ -149,7 +157,7 @@
         }
         {
             key = "<leader>fg";
-            action = "<cmd>Telescope live_grep<cr>";
+            action = ":lua Snacks.picker.grep()<cr>";
             options = {
                 silent = true;
                 desc = "Grep";
@@ -157,7 +165,7 @@
         }
         {
             key = "<leader>fx";
-            action = "<cmd>Telescope git_files<cr>";
+            action = ":lua Snacks.picker.git_status()<cr>";
             options = {
                 silent = true;
                 desc = "Git files";
@@ -165,7 +173,7 @@
         }
         {
             key = "<leader>fp";
-            action = "<cmd>Telescope projects<cr>";
+            action = ":lua Snacks.picker.projects()<cr>";
             options = {
                 silent = true;
                 desc = "Projects";
@@ -173,7 +181,7 @@
         }
         {
             key = "<leader><space>";
-            action = "<cmd>Telescope buffers<cr>";
+            action = ":lua Snacks.picker.buffers()<cr>";
             options = {
                 silent = true;
                 desc = "Buffers";
@@ -181,15 +189,15 @@
         }
         {
             key = "<leader>fd";
-            action = "<cmd>Telescope lsp_document_symbols<cr>";
+            action = ":lua Snacks.picker.lsp_definitions()<cr>";
             options = {
                 silent = true;
-                desc = "Document symbols";
+                desc = "LSP definitions";
             };
         }
         {
             key = "<leader>fh";
-            action = "<cmd>Telescope help_tags<cr>";
+            action = ":lua Snacks.picker.help()<cr>";
             options = {
                 silent = true;
                 desc = "Help";
@@ -197,7 +205,7 @@
         }
         {
             key = "<leader>fr";
-            action = "<cmd>Telescope lsp_references<cr>";
+            action = ":lua Snacks.picker.lsp_references()<cr>";
             options = {
                 silent = true;
                 desc = "References";
@@ -205,7 +213,7 @@
         }
         {
             key = "<leader>fq";
-            action = "<cmd>Telescope quickfix<cr>";
+            action = ":lua Snacks.picker.qflist()<cr>";
             options = {
                 silent = true;
                 desc = "Quickfix";
@@ -213,34 +221,10 @@
         }
         {
             key = "<leader>fu";
-            action = "<cmd>Telescope undo<cr>";
+            action = ":lua Snacks.picker.undo()<cr>";
             options = {
                 silent = true;
                 desc = "Undo";
-            };
-        }
-        {
-            key = "<leader>fo";
-            action = "<cmd>Telescope oldfiles<cr>";
-            options = {
-                silent = true;
-                desc = "Old files";
-            };
-        }
-        {
-            key = "<leader>ft";
-            action = "<cmd>Telescope todo-comments<cr>";
-            options = {
-                silent = true;
-                desc = "Todos";
-            };
-        }
-        {
-            key = "<leader>f?";
-            action = "<cmd>Telescope builtin<cr>";
-            options = {
-                silent = true;
-                desc = "Other";
             };
         }
 

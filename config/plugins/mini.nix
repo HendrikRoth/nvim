@@ -55,11 +55,6 @@
         };
       };
       hipatterns = { };
-      # indentscope = {
-      #   draw = {
-      #     delay = 0;
-      #   };
-      # };
       jump2d = { };
       move = {
         mappings = {
@@ -76,7 +71,6 @@
           line_right = "<c-l>";
         };
       };
-      # notify = { };
       pairs = { };
       statusline = {
         set_vim_settings = false;
