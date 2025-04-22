@@ -156,6 +156,14 @@
             };
         }
         {
+            key = "<leader>ft";
+            action = ":lua Snacks.picker.todo_comments({ layout = 'ivy' })<cr>";
+            options = {
+                silent = true;
+                desc = "Todo";
+            };
+        }
+        {
             key = "<leader>fg";
             action = ":lua Snacks.picker.grep()<cr>";
             options = {
@@ -173,7 +181,7 @@
         }
         {
             key = "<leader>fp";
-            action = ":lua Snacks.picker.projects()<cr>";
+            action = ":lua Snacks.picker.projects({ layout = 'vsccode' })<cr>";
             options = {
                 silent = true;
                 desc = "Projects";
@@ -181,7 +189,7 @@
         }
         {
             key = "<leader><space>";
-            action = ":lua Snacks.picker.buffers()<cr>";
+            action = ":lua Snacks.picker.buffers({ layout = 'vscode' })<cr>";
             options = {
                 silent = true;
                 desc = "Buffers";
