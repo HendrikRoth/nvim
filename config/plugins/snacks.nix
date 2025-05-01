@@ -7,7 +7,7 @@
       dashboard.enabled = false;
       bigfile.enabled = true;
       quickfile.enabled = true;
-      explorer.replace_netrw = true;
+      explorer.enabled = false;
       input.enabled = true;
       notifier = {
         enabled = true;
