@@ -132,7 +132,7 @@
 
         # Snacks
         {
-            key = "<leader><CR>";
+            key = "<S-CR>";
             action = ":lua Snacks.terminal()<cr>";
             options = {
                 silent = true;
