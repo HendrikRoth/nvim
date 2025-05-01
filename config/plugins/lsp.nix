@@ -53,7 +53,7 @@
     enable = true;
     inlayHints = true;
     servers = {
-      ts_ls.enable = true;
+      ts_ls.enable = false;
       cssls.enable = true;
       tailwindcss.enable = true;
       helm_ls.enable = true;
